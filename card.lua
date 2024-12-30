@@ -1,7 +1,5 @@
 repeat wait() until game:IsLoaded()
-if game.PlaceId ~= 14229762361 then
-    wait(10)
-end
+
 getgenv().FocusWave = 5 -- Priority limit wave
 getgenv().PriorityCards = { -- Priority tags when wave = FocusWave
     "+ Range I",
