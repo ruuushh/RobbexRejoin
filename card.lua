@@ -1,5 +1,4 @@
-repeat wait() until game:IsLoaded()
-
+-- credit from : Bocchi World
 getgenv().FocusWave = 5 -- Priority limit wave
 getgenv().PriorityCards = { -- Priority tags when wave = FocusWave
     "+ Range I",
@@ -16,37 +15,42 @@ getgenv().PriorityCards = { -- Priority tags when wave = FocusWave
     "+ Gain 2 Random Effects Tier 3"
 }
 getgenv().Cards = { -- All cards after FocusWave wave ends
-    "+ Yen I",
-    "+ Yen II",
-    "+ Yen III",
     "+ Explosive Deaths I",
     "+ Explosive Deaths II",
     "+ Explosive Deaths III",
     "+ Gain 2 Random Curses Tier 3",
     "+ Gain 2 Random Curses Tier 2",
     "+ Gain 2 Random Curses Tier 1",
+    "+ Enemy Speed III",
+    "+ Enemy Speed II",
+    "+ Enemy Regen III",
     "+ Enemy Shield III",
+    "+ Enemy Health III",
+    "+ Enemy Regen II",
     "+ Enemy Shield II",
+    "+ Enemy Regen I",
+    "+ Enemy Speed I",
     "+ Enemy Shield I",
+    "+ Enemy Health II",
+    "+ Enemy Health I",
+    "+ Yen I",
+    "+ Yen II",
+    "+ Yen III",
     "+ Boss Damage I",
+    "- Cooldown I",
+    "+ Gain 2 Random Effects Tier 1",
+    "+ Range I",
+    "+ Attack I",
+    "- Cooldown II",
     "+ Boss Damage II",
     "+ Boss Damage III",
-    "+ Range I",
-    "+ Cooldown I",
-    "+ Attack I",
-    "+ Gain 2 Random Effects Tier 1",
-    "+ Cooldown II",
-    "+ Attack II",
+    "- Cooldown III",
     "+ Gain 2 Random Effects Tier 2",
-    "+ Cooldown III",
     "+ Range II",
+    "+ Attack II",
+    "+ Gain 2 Random Effects Tier 3",
     "+ Range III",
     "+ Attack III",
-    "+ Gain 2 Random Effects Tier 3",
-    "+ Enemy Regen I",
-    "+ Enemy Regen II",
-    "+ Enemy Regen III",
     "+ New Path"
 }
--- Priority from bottom to top in all items
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Niga-Niga/scripts/refs/heads/main/pickcard.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bocchi-World/Bocchi-Main/refs/heads/main/pickcard.lua"))()
