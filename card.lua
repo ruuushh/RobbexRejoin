@@ -1,4 +1,4 @@
--- credit from : Bocchi World
+ -- credit from :Card change by DripDoge
 getgenv().FocusWave = 5 -- Priority limit wave
 getgenv().PriorityCards = { -- Priority tags when wave = FocusWave
     "+ Range I",
@@ -21,36 +21,44 @@ getgenv().Cards = { -- All cards after FocusWave wave ends
     "+ Gain 2 Random Curses Tier 3",
     "+ Gain 2 Random Curses Tier 2",
     "+ Gain 2 Random Curses Tier 1",
-    "+ Enemy Speed III",
-    "+ Enemy Speed II",
-    "+ Enemy Regen III",
     "+ Enemy Shield III",
-    "+ Enemy Health III",
-    "+ Enemy Regen II",
     "+ Enemy Shield II",
-    "+ Enemy Regen I",
-    "+ Enemy Speed I",
     "+ Enemy Shield I",
-    "+ Enemy Health II",
-    "+ Enemy Health I",
-    "+ Yen I",
-    "+ Yen II",
-    "+ Yen III",
     "+ Boss Damage I",
-    "- Cooldown I",
-    "+ Gain 2 Random Effects Tier 1",
-    "+ Range I",
-    "+ Attack I",
-    "- Cooldown II",
     "+ Boss Damage II",
     "+ Boss Damage III",
-    "- Cooldown III",
-    "+ Gain 2 Random Effects Tier 2",
-    "+ Range II",
+    "+ Range I",
+    "+ Cooldown I",
+    "+ Attack I",
+    "+ Gain 2 Random Effects Tier 1",
+    "+ Cooldown II",
     "+ Attack II",
-    "+ Gain 2 Random Effects Tier 3",
+    "+ Gain 2 Random Effects Tier 2",
+    "+ Cooldown III",
+    "+ Range II",
     "+ Range III",
     "+ Attack III",
+    "+ Gain 2 Random Effects Tier 3",
+    "+ Enemy Regen I",
+    "+ Enemy Regen II",
+    "+ Enemy Regen III",
     "+ New Path"
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Bocchi-World/Bocchi-Main/refs/heads/main/pickcard.lua"))()
+
+
+local success1, errorMsg1 = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bocchi-World/Bocchi-Main/refs/heads/main/pickcard.lua"))()
+end)
+if success1 then
+    print("done")
+else
+    warn("false1")
+end
+local success2, errorMsg2 = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Ngducok/doing-some-shit/refs/heads/main/hey.lua"))()
+end)
+if success2 then
+    print("done")
+else
+    warn("false2")
+end
