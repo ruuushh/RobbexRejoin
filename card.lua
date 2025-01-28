@@ -52,4 +52,4 @@ getgenv().Cards = { -- All cards after FocusWave wave ends
     "+ Enemy Regen III",
     "+ New Path"
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Bocchi-World/Bocchi-Main/refs/heads/main/loader.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bocchi-World/Bocchi-Main/refs/heads/main/loader.lua"))() 
